@@ -13,7 +13,8 @@ body {
   color: #1a1a1a;
   background: #ffffff;
 }
-h1{colour:green}
+h1{colour:green;
+}
 
 header {
   background: var(--main-colour);

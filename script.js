@@ -27,7 +27,7 @@ if (toggleButton) {
 
 // Day 4, Block 2: first add the list section to index.html (the page gives you the HTML),
 // then delete the slash-star line below and the star-slash line at the end to switch this on.
-/*
+
 const items = ["Build a web page", "Make a game", "Program a robot", "Turn data into a chart"];
 const list = document.querySelector("#item-list");
 
@@ -40,4 +40,4 @@ if (list) {
   }
   console.log("Items shown:", items.length);
 }
-*/
+

@@ -40,3 +40,21 @@ if (list) {
   }
   console.log("Items shown:", items.length);
 }
+// Day 6, Block 1: show every session from data.js on the Sessions page
+const dataList = document.querySelector("#data-list");
+
+// Only run this on a page that has the session list.
+if (dataList) {
+  for (const session of sessions) {
+    const li = document.createElement("li");
+    let spaces = "";
+    if (session.spacesLeft === 0) {
+      spaces = "Full";
+    } else {
+      spaces = session.spacesLeft + " spaces left";
+    }
+    li.textContent = session.name + ": " + session.day + ", " + session.level + ". " + spaces;
+    dataList.appendChild(li);
+  }
+  console.log("Sessions shown:", sessions.length);
+}

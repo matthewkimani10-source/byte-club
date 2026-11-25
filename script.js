@@ -58,26 +58,22 @@ if (dataList) {
   }
   console.log("Sessions shown:", sessions.length);
 }
-// Day 6, Block 2: keep only the free clubs
-// Only run this on a page that has the data list.
+// Day 6, Block 2: keep only the Beginner sessions
 if (dataList) {
-  const free = clubs.filter(function (club) {
-    return club.costKsh === 0;
+  const beginner = sessions.filter(function (session) {
+    return session.level === "Beginner";
   });
-
   const filterCount = document.querySelector("#filter-count");
   const filterList = document.querySelector("#filter-list");
-  filterCount.textContent = free.length + " of " + clubs.length + " clubs match.";
-
-  for (const club of free) {
+  filterCount.textContent = beginner.length + " of " + sessions.length + " sessions match.";
+  for (const session of beginner) {
     const li = document.createElement("li");
-    li.textContent = club.name + " on " + club.day;
+    li.textContent = session.name + " on " + session.day;
     filterList.appendChild(li);
   }
-
-  if (free.length === 0) {
+  if (beginner.length === 0) {
     const li = document.createElement("li");
-    li.textContent = "No clubs match";
+    li.textContent = "No sessions match";
     filterList.appendChild(li);
   }
 }

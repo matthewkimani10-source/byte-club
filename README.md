@@ -4,10 +4,10 @@
 A website for Byte Club, a made-up coding club that meets in the computer room. One or two sentences.
 
 ## Who it is for
-A learner aged 12 to 15 thinking of joining, and what they need to know before they join.
+This site is for peaople aged 15 to 18.
 
 ## How to open it
-Live site: [your GitHub Pages address]
+Live site: [https://github.com/matthewkimani10-source/byte-club]
 
 ## What it does
 - Three connected pages: Home, About the club, Sessions
@@ -21,4 +21,4 @@ Every image, fact and dataset is listed on the About page and in my source recor
 What I asked the AI (Claude or Cursor), what I checked and what I changed is in my AI accountability log.
 
 ## What I would do next
-One or two ideas.
+i would like to add a review page for the coders who joined
